@@ -1,0 +1,10 @@
+.scalable-row {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Adding transitions for both transform and box-shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adding a subtle box-shadow by default */
+  }
+  
+  .scalable-row:hover {
+    transform: scale(1.02); /* Scale the row by 5% when hovered */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase the box-shadow on hover */
+  }
+  

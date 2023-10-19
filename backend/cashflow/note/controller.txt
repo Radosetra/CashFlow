@@ -1,0 +1,22 @@
+Creating ressource contrroller :
+
+# php artisan make:controller modelController --resource
+
+-> crud fonctionnel
+
+using route :
+
+Route::resource('model', 'modelController')
+
+
+Insertion dans une table pivot
+model->role()->attach(...)
+
+ATTENTION
+Always precise the attribute name in our relationship for your model
+public function incomes(){
+        return $this->belongsToMany(Income::class, -1-'income_expenses', -2-'expense_id', 'income_id')
+                    ->withPivot('inc_exp_amount');
+    }
+1 - 2 : the perfect exemple of attribute name precision
+

@@ -1,0 +1,1 @@
+php artisan migrate --path=/database/migrations/2022_01_01_000000_create_customers_table.php
